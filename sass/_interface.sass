@@ -1,6 +1,8 @@
 body
     +light
     color: $text-color
+.img
+    min-width: 100%    
 .section
     padding: 100px 0    
     &-title
@@ -18,13 +20,27 @@ body
     color: $primary
     background-color: transparent
     +bold
+    text-decoration: none
 .button
+    text-decoration: none
     border: none //откл отводка
     text-transform: uppercase //капс
     padding: 25px 45px
     background-color: $primary    
     color: #ffffff
     +bold
+    &-fitting
+        color: $primary
+        background-color: #fff
+    &-add
+        background-color: lighten($primary, 10%)
+        color: #ffffff
+    &-like
+        background-color: $primary
+        height: 30px
+        width: 30px
+        border: none    
+          
 .bg-secondary
     background: $bg-secondary
 .input
