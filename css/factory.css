@@ -1,0 +1,25 @@
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.factory-block__text {
+  margin-left: 70px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 20px;
+}
+
+.factory-block__image {
+  margin: 20px 0;
+}
+
+.factory-block__img-size {
+  width: 500px;
+}
