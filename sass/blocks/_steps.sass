@@ -1,0 +1,60 @@
+.step
+    position: relative
+    text-align: center
+    &__title
+        font-size: 18px
+        padding-top: 10px
+    &:last-child
+        &:before
+            display: none    
+    &:before
+        content: ''
+        width: 90%
+        height: 2px
+        background-color: rgba(7, 49, 236, 0.7)
+        box-shadow: 0.1em 0.1em 0em 0em rgba(7, 49, 236, 0.3)
+        position: absolute
+        top: 15%
+        right: -61%                  
+    &__text
+        max-width: 156px
+        margin: auto //текст по центру
+        margin-bottom: 30px
+    &s
+        background-color: #f1f1f1    
+        &-block
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+    &__stage
+        display: inline-block
+        background: #2510e031 
+        border: 0.1em solid transparent
+        box-shadow: 0 0 3em 0.5em rgba(7, 49, 236, 0.9)
+        border-radius: 50%
+        height: 5em
+        width: 5em
+        align-items: center
+        justify-content: center
+    &__number   
+        margin: 0
+        font-size: 4em
+        +bold    
+        color: $primary
+@media ( max-width: 1199px )
+    .step
+        &:before
+            display: none        
+@media ( max-width: 991px )
+    .step
+        flex-basis: 33%
+        &:before
+            display: none
+@media ( max-width: 768px )
+    .step
+        flex-basis: 100%            
+
+            
+
+
+        
