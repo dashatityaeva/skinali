@@ -325,7 +325,9 @@ body {
 
 .hero__title {
   padding-top: 20px;
-  font-size: 30px;
+  font-size: 45px;
+  color: #22130e;
+  letter-spacing: 5px;
 }
 
 .hero__subtitle {
@@ -334,6 +336,8 @@ body {
   margin-bottom: 67px;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+  color: #22130e;
+  letter-spacing: 4px;
 }
 
 .g {
@@ -360,7 +364,7 @@ body {
 }
 
 .offer-block_calc-bg {
-  background: #fff url("../img/offer/form-bg-calc.jpg") no-repeat center right -190%;
+  background: #fff url("../img/offer/form-bg-calc.jpg") no-repeat center right -200%;
   background-size: contain;
 }
 
@@ -568,8 +572,13 @@ body {
   height: 30px;
 }
 
+.catalog-card__button-like {
+  padding: 0 0;
+}
+
 .catalog-card__imglike {
-  width: 110%;
+  width: 22px;
+  height: 20px;
 }
 
 .catalog-card__tag {
@@ -693,6 +702,10 @@ body {
   }
 }
 
+.price {
+  background-color: #f5f6f8;
+}
+
 .price-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -813,10 +826,6 @@ body {
   margin-bottom: 30px;
 }
 
-.steps {
-  background-color: #f1f1f1;
-}
-
 .steps-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -843,6 +852,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.step__stage:hover {
+  -webkit-box-shadow: 0 0 3em 1em #0731ec;
+          box-shadow: 0 0 3em 1em #0731ec;
 }
 
 .step__number {
@@ -947,6 +961,27 @@ body {
 
 .factory-block__img-size {
   width: 500px;
+}
+
+@media (max-width: 1199px) {
+  .factory-block__text {
+    margin: 0;
+    width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .factory-block__text {
+    margin: 0;
+    width: 450px;
+  }
+}
+
+@media (max-width: 520px) {
+  .factory-block__text {
+    margin: 0;
+    width: 350px;
+  }
 }
 
 .contacts {
