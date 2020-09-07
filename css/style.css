@@ -363,7 +363,7 @@ input[type="checkbox"]:checked + label:before {
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   top: 80px;
   left: 0;
   width: 100%;
