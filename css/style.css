@@ -526,7 +526,6 @@ input[type="checkbox"]:checked + label:before {
 }
 
 .offer {
-  position: relative;
   padding: 129px 0;
 }
 

@@ -112,17 +112,6 @@ gsap.utils.toArray(".blog-card").forEach((item, index ) => {
 
 //price
 
-//steps ??
-gsap.to(".steps", {
-    scrollTrigger: {
-        trigger: ".steps",
-        start: "top top",
-        end: "+=150px",
-        pinSpacing: false,
-        pin: true,
-        // markers: true,
-    },
-});
 
 
 //reviews
@@ -145,7 +134,51 @@ $(".reviews-slider__item").mouseleave(function(){
 
 
 //offer
+let offerTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".of-tl",
+        // markers: true,
+        start : 'top 80% ',
+        end: 'bottom center',
+    },
+});
 
+offerTl
+    .from(".of-subtl", {opacity:0, x: -100})
+    .to(".of-subtl", {opacity:1, x: 0, duration: 0.1})
+    .from( ".row__inp", {opacity:0, y: -10})
+    .to( ".row__inp", {opacity:1, y: 0,  duration: 0.1})
+    .from( ".row__info", {opacity:0, y: -10})
+    .to( ".row__info", {opacity:1, y: 0,  duration: 0.1})
+
+//steps ??
+gsap.to(".of", {
+    scrollTrigger: {
+        trigger: ".of",
+        start: "top top",
+        end: "+=150px",
+        pinSpacing: false,
+        pin: true,
+        // markers: true,
+    },
+});
 
 //factory
-
+let factoryTl = gsap.timeline({
+ 
+    scrollTrigger: {
+        trigger: ".factory",
+        // markers: true,
+        start : 'top 50% ',
+        end: 'bottom center',
+    },
+    duration: 0.5
+  });
+  
+  factoryTl
+  .from("#factory__title", { opacity:0, x: -100})
+  .to("#factory__title", {opacity: 1, x: 0})
+  .from(".factory-block__image", { opacity:0, x: -100})
+  .to(".factory-block__image", {opacity: 1, x: 0})
+  .from(".factory-block__text", { opacity:0, x: 100})
+  .to(".factory-block__text", {opacity: 1, x: 0})
