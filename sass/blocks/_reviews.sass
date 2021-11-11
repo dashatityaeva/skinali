@@ -3,8 +3,11 @@
     &-slider
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
         &__item
             text-align: center
+            width: 33%
+            margin-bottom: 15px
         &__image
             display: block
             width: 70px
@@ -33,7 +36,19 @@
 @media ( max-width: 1199px )
     .reviews
          &-slider
-            flex-direction: column
+            // flex-direction: column
             justify-content: center
             align-items: center
-    
+            &__item
+                width: 50%
+@media ( max-width: 768px )
+    .reviews
+         &-slider
+            flex-direction: column
+            &__item
+                width: 50%
+@media ( max-width: 500px )
+    .reviews
+         &-slider
+            &__item
+                width: 100%
